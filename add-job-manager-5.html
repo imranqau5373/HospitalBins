@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link  active " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-fill job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-1.html"><i class="material-icons mr-1">post_add</i><span>Job Info</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-2.html"><i class="material-icons mr-1">assignment</i><span>Questionaire</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-3.html"><i class="material-icons mr-1">web</i><span>Form Builder</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-4.html"><i class="material-icons mr-1">dynamic_feed</i><span>Hiring flow</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="add-job-manager-5.html"><i class="material-icons mr-1">supervisor_account</i><span>Team</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-6.html"><i class="material-icons mr-1">contacts</i><span>Candidate</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-7.html"><i class="material-icons mr-1">open_in_new</i><span>Preview</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title mb-4">Add Reviewers</h5>
+                <p>You can add new reviewer from the list below in <strong>Questionnaire sample</strong> or add new via email</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <label for="NameField" class="font-weight-bolder mb-2">Enter new email to invite new reviewer</label>
+                      <form class="form-inline">
+                        <input type="text" class="form-control mb-2 mr-sm-2 w-25" id="inlineFormInputName2" placeholder="Team member email">
+                        <div class="input-group mb-2 mr-sm-2">
+                          <select class="form-control">
+                            <option>Team member role</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Invite</button>
+                      </form>
+                      <hr>
+                      <div class="table-responsive">
+                        <table class="table table-borderless reviewer-table">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Profile</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Cell</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                              <td><i class="material-icons">account_circle</i></td>
+                              <td>Harry Poter Will Smith</td>
+                              <td width="250"><select class="form-control">
+                                  <option>Team member role</option>
+                                </select></td>
+                              <td>harry_mocha@thedomain.com</td>
+                              <td>+45-9989898</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                              <td><i class="material-icons">account_circle</i></td>
+                              <td>Jacob</td>
+                              <td>Jacob</td>
+                              <td>Jacob</td>
+                              <td>Jacob</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                              <td><i class="material-icons">account_circle</i></td>
+                              <td>Larry</td>
+                              <td>@twitter</td>
+                              <td>@twitter</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer"> <a href="add-job-manager-6.html" class="btn btn-primary float-right mr-2">NEXT</a> <a href="add-job-manager-4.html" class="btn btn-outline-primary float-left ml-2">Back</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom navbar-light bg-dark"> <a href="job-manager.html" class="btn btn-danger">Cancel</a>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </form>
+      </nav>
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

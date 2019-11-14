@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link  active " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-fill job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-1.html"><i class="material-icons mr-1">post_add</i><span>Job Info</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="add-job-manager-2.html"><i class="material-icons mr-1">assignment</i><span>Questionaire</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-3.html"><i class="material-icons mr-1">web</i><span>Form Builder</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-4.html"><i class="material-icons mr-1">dynamic_feed</i><span>Hiring flow</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-5.html"><i class="material-icons mr-1">supervisor_account</i><span>Team</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-6.html"><i class="material-icons mr-1">contacts</i><span>Candidate</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-7.html"><i class="material-icons mr-1">open_in_new</i><span>Preview</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title mb-4">Add New Questionaire </h5>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="NameField" class="font-weight-bolder">Name</label>
+                        <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Enter Text">
+                        <small id="emailHelp" class="form-text text-muted">Please enter name</small> </div>
+                    </div>
+                    <div class="col-lg-11">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <!--   Single choice     -->
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Single and Multi Questions <a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Example: This is question">
+                                    <small id="emailHelp" class="form-text text-muted">Please enter question text</small> </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Example: 90s">
+                                    <small id="emailHelp" class="form-text text-muted">Add time of expiry for this question</small> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <label for="NameField" class="font-weight-bolder">Question type</label>
+                                  <div class="dropdown ">
+                                    <button class="btn btn-outline-dark dropdown-toggle border-form" type="button" id="dropdownMenuButtonLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select type </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item " href="#">Single choice</a> <a class="dropdown-item" href="#">Multi Choice</a> <a class="dropdown-item" href="#">Match</a> <a class="dropdown-item" href="#">Calculating/Mathematics</a> <a class="dropdown-item" href="#">Sequence</a> <a class="dropdown-item" href="#">Spelling</a> <a class="dropdown-item" href="#">Translate</a> <a class="dropdown-item" href="#">Color Blindness Test</a> <a class="dropdown-item" href="#">More Answers</a> <a class="dropdown-item" href="#">Motication Test</a> <a class="dropdown-item" href="#">Weighted Answers</a> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                <div class="col-12 custom-textbox-form">
+                                  <label class="sr-only" for="inlineFormInputGroup">Answer 1</label>
+                                  <div class="input-group mb-2">
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 1">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 custom-textbox-form">
+                                  <label class="sr-only" for="inlineFormInputGroup">Answer 2</label>
+                                  <div class="input-group mb-2">
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 custom-textbox-form">
+                                  <label class="sr-only" for="inlineFormInputGroup">Answer 3</label>
+                                  <div class="input-group mb-2">
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 3">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 custom-textbox-form"> <span>
+                                    <button type="button" class="btn btn-primary btn-sm">+ add more</button>
+                                  </span> </div>
+                              </div>
+                            </div>
+                            <div class="card-footer">
+                              <div class="custom-control custom-switch float-left">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Answer must required</label>
+                              </div>
+                              <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Delete Question"><i class="material-icons">delete_forever</i></a> <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Duplicate Question"><i class="material-icons mr-2">file_copy</i></a>
+                            </div>
+                          </div>
+                          <!--   Single choice     -->
+                          <!--    Multi choice   -->
+                          <div class="card multi-choice">
+                            <div class="card-body">
+                              <h5 class="card-title">Match question <a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext3" aria-describedby="DateHelp" placeholder="Example: This is question">
+                                    <small id="emailHelp3" class="form-text text-muted">Please enter question text</small> </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext4" aria-describedby="DateHelp" placeholder="Example: 90s">
+                                    <small id="emailHelp4" class="form-text text-muted">Add time of expiry for this question</small> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <label for="NameField" class="font-weight-bolder">Question type</label>
+                                  <div class="dropdown ">
+                                    <button class="btn btn-outline-dark dropdown-toggle border-form" type="button" id="dropdownMenuButtonLang1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select type </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Single choice</a> <a class="dropdown-item" href="#">Multi Choice</a> <a class="dropdown-item" href="#">Match</a> <a class="dropdown-item" href="#">Calculating/Mathematics</a> <a class="dropdown-item" href="#">Sequence</a> <a class="dropdown-item" href="#">Spelling</a> <a class="dropdown-item" href="#">Translate</a> <a class="dropdown-item" href="#">Color Blindness Test</a> <a class="dropdown-item" href="#">More Answers</a> <a class="dropdown-item" href="#">Motication Test</a> <a class="dropdown-item" href="#">Weighted Answers</a> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="input-group mb-2">
+                                    <input type="text" aria-label="First name" class="form-control" placeholder="Question 1">
+                                    <input type="text" aria-label="Last name" class="form-control" placeholder="Answer 2">
+                                    <div class="input-group-prepend"> <span class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></span> </div>
+                                  </div>
+                                  <div class="input-group mb-2">
+                                    <input type="text" aria-label="First name" class="form-control" placeholder="Question 1">
+                                    <input type="text" aria-label="Last name" class="form-control" placeholder="Answer 2">
+                                    <div class="input-group-prepend"> <span class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></span> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 custom-textbox-form"> <span>
+                                    <button type="button" class="btn btn-primary btn-sm">+ add more</button>
+                                  </span> </div>
+                              </div>
+                            </div>
+                            <div class="card-footer">
+                              <div class="custom-control custom-switch float-left">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Answer must required</label>
+                              </div>
+                              <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Delete Question"><i class="material-icons">delete_forever</i></a> <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Duplicate Question"><i class="material-icons mr-2">file_copy</i></a>
+                            </div>
+                          </div>
+                          <!--    Multi choice   -->
+                          <!--  Color blind test -->
+                          <div class="card color-blind-test">
+                            <div class="card-body">
+                              <h5 class="card-title">Color Blind Test<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext3" aria-describedby="DateHelp" placeholder="Example: This is question">
+                                    <small id="emailHelp3" class="form-text text-muted">Please enter question text</small> </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="nametext4" aria-describedby="DateHelp" placeholder="Example: 90s">
+                                    <small id="emailHelp4" class="form-text text-muted">Add time of expiry for this question</small> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <label for="NameField" class="font-weight-bolder">Question type</label>
+                                  <div class="dropdown ">
+                                    <button class="btn btn-outline-dark dropdown-toggle border-form" type="button" id="dropdownMenuButtonLang1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select type </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Single choice</a> <a class="dropdown-item" href="#">Multi Choice</a> <a class="dropdown-item" href="#">Match</a> <a class="dropdown-item" href="#">Calculating/Mathematics</a> <a class="dropdown-item" href="#">Sequence</a> <a class="dropdown-item" href="#">Spelling</a> <a class="dropdown-item" href="#">Translate</a> <a class="dropdown-item" href="#">Color Blindness Test</a> <a class="dropdown-item" href="#">More Answers</a> <a class="dropdown-item" href="#">Motication Test</a> <a class="dropdown-item" href="#">Weighted Answers</a> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend"> <span class="input-group-text" id="inputGroupFileAddon01">Upload</span> </div>
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                      <label class="custom-file-label" for="inputGroupFile01">Choose Image file</label>
+                                    </div>
+                                  </div>
+                                  <small id="emailHelp4" class="form-text text-muted">Supported image types: .jpg, .png, .gif</small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer">
+                              <div class="custom-control custom-switch float-left">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Answer must required</label>
+                              </div>
+                              <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Delete Question"><i class="material-icons">delete_forever</i></a> <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Duplicate Question"><i class="material-icons mr-2">file_copy</i></a>
+                            </div>
+                          </div>
+                          <!--  Color blind test -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div class="row ">
+                        <div class="card toolbox">
+                          <div class="card-body text-center"> <a href="#" data-toggle="modal" data-target=".bd-question-modal-sm" data-keyboard="false" data-backdrop="static"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="add new question">queue_play_next</i></a> <a href="#"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="import questionaire">text_rotate_vertical</i></a> <a href="#"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="add photo">add_photo_alternate</i></a> <a href="#"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="add video">video_call</i></a> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ON SMALL SCREENS SHOW FAB TOOLBOX-->
+                    <div class="fab"> <span class="fab-action-button"> <i class="material-icons fab-action-button__icon ">add_circle</i> </span>
+                      <ul class="fab-buttons">
+                        <li class="fab-buttons__item"> <a href="#" class="fab-buttons__link" data-tooltip="Add question" data-toggle="modal" data-target=".bd-question-modal-sm" data-keyboard="false" data-backdrop="static"> <i class="material-icons fab-action-button__icon fab-mini-icons">queue_play_next</i> </a> </li>
+                        <li class="fab-buttons__item"> <a href="#" class="fab-buttons__link" data-tooltip="Import questionaire"> <i class="material-icons fab-action-button__icon fab-mini-icons">text_rotate_vertical</i> </a> </li>
+                        <li class="fab-buttons__item"> <a href="#" class="fab-buttons__link" data-tooltip="Add image"> <i class="material-icons fab-action-button__icon fab-mini-icons">add_photo_alternate</i> </a> </li>
+                        <li class="fab-buttons__item"> <a href="#" class="fab-buttons__link" data-tooltip="Add video"> <i class="material-icons fab-action-button__icon fab-mini-icons">video_call</i> </a> </li>
+                      </ul>
+                    </div>
+                    <!-- ON SMALL SCREENS SHOW FAB TOOLBOX-->
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer"> <a href="add-job-manager-3.html" class="btn btn-primary float-right mr-2">Next</a> <a href="add-job-manager-1.html" class="btn btn-outline-primary float-left ml-2">Back</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom navbar-light bg-dark"> <a href="job-manager.html" class="btn btn-danger">Cancel</a>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </form>
+      </nav>
+      <!--   MODAL ADD QUESTIONS   -->
+      <div class="modal fade bd-question-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Select Question Type</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body p-0 m-0">
+              <div class="list-group list-group-flush text-center"> <a href="#" class="list-group-item list-group-item-action"> Single Choice </a> <a href="#" class="list-group-item list-group-item-action">Multi Choice</a> <a href="#" class="list-group-item list-group-item-action">Match</a> <a href="#" class="list-group-item list-group-item-action">Calculating / Mathematics</a> <a href="#" class="list-group-item list-group-item-action">Sequence</a> <a href="#" class="list-group-item list-group-item-action">Spelling</a> <a href="#" class="list-group-item list-group-item-action">Translate</a> <a href="#" class="list-group-item list-group-item-action">Color blindness test</a> <a href="#" class="list-group-item list-group-item-action">More answers</a> <a href="#" class="list-group-item list-group-item-action">Motivation test</a> <a href="#" class="list-group-item list-group-item-action">Weighted Answers</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--   MODAL ADD QUESTIONS   -->
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

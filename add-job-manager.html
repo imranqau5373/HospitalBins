@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand mr-3" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item  active "> <a class="nav-link" href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item "> <a class="nav-link" href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item "> <a class="nav-link" href="template.html">Templates</a> </li>
+          <li class="nav-item "> <a class="nav-link" href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12 ">
+            <ul class="breadcrumbs">
+              <li class="active-arrow"> <a href="job-manager.html" class="text-white"> My Jobs</a> </li>
+              <li> <a href="active-job-manager.html" class="text-white"> Active Jobs</a> </li>
+              <li> <a href="archived-job-manager.html" class="text-white"> Archived</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="material-icons ">search</i></span> </div>
+              <input type="text" class="form-control form-resizer" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+              <div class="dropdown">
+                <button class="btn btn-secondary  org-radius ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons mr-1">filter_list</i>Filter </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">New to old</a> <a class="dropdown-item" href="#">Old to new</a> <a class="dropdown-item" href="#">Most used</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="float-right">
+              <a href="add-job-manager.html"><button type="button" class="btn btn-primary"><i class="fas fa-plus-circle mr-1"></i>Add new job</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            <h2 class="mb-3 font-weight-bolder">My Jobs</h2>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Product Manager<span class="card-controls"><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Archive"><a href="#"><i class="material-icons  circle-icon">archive</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Duplicate"><a href="#"><i class="material-icons  circle-icon">control_point_duplicate</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"><i class="material-icons  circle-icon">edit</i></a></span></span> <span class="float-right three-dot">
+                    <div class="btn-group"> <a href="#" class="text-dark" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"> <i class="material-icons"> more_vert </i> </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">edit</i>Edit</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">control_point_duplicate</i>Duplicate</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">archive</i>Archive</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">delete_forever</i>Delete</button>
+                      </div>
+                    </div>
+                  </span> </h5>
+                <h6 class="card-subtitle mb-2 text-muted">Last edited: 7 minutes ago</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-footer text-muted"> <strong>5</strong> Candidates <span class="float-right"><a href="#"><i class="material-icons text-secondary mr-2" data-toggle="tooltip" data-placement="top" title="Follow job">notification_important</i></a>
+                  <div class="dropdown float-right">
+                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Status </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+                  </div>
+                </span> </div>
+            </div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Product Manager<span class="card-controls"><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Archive"><a href="#"><i class="material-icons  circle-icon">archive</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Duplicate"><a href="#"><i class="material-icons  circle-icon">control_point_duplicate</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"><i class="material-icons  circle-icon">edit</i></a></span></span> <span class="float-right three-dot">
+                    <div class="btn-group"> <a href="#" class="text-dark" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"> <i class="material-icons"> more_vert </i> </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">edit</i>Edit</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">control_point_duplicate</i>Duplicate</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">archive</i>Archive</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">delete_forever</i>Delete</button>
+                      </div>
+                    </div>
+                  </span> </h5>
+                <h6 class="card-subtitle mb-2 text-muted">Last edited: 7 minutes ago</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-footer text-muted"> <strong>5</strong> Candidates <span class="float-right"><a href="#"><i class="material-icons text-secondary mr-2" data-toggle="tooltip" data-placement="top" title="Follow job">notification_important</i></a>
+                  <div class="dropdown float-right">
+                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Status </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+                  </div>
+                </span> </div>
+            </div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Product Manager<span class="card-controls"><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Archive"><a href="#"><i class="material-icons  circle-icon">archive</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Duplicate"><a href="#"><i class="material-icons  circle-icon">control_point_duplicate</i></a></span><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Edit"><a href="#"><i class="material-icons  circle-icon">edit</i></a></span></span> <span class="float-right three-dot">
+                    <div class="btn-group"> <a href="#" class="text-dark" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"> <i class="material-icons"> more_vert </i> </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">edit</i>Edit</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">control_point_duplicate</i>Duplicate</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">archive</i>Archive</button>
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">delete_forever</i>Delete</button>
+                      </div>
+                    </div>
+                  </span> </h5>
+                <h6 class="card-subtitle mb-2 text-muted">Last edited: 7 minutes ago</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-footer text-muted"> <strong>5</strong> Candidates <span class="float-right"><a href="#"><i class="material-icons text-secondary mr-2" data-toggle="tooltip" data-placement="top" title="Follow job">notification_important</i></a>
+                  <div class="dropdown float-right">
+                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Status </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+                  </div>
+                </span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script><!-- replace 'project' with project name -->
+    <script src='assets/js/speekio-caller.js'></script><!-- replace 'project' with project name -->
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

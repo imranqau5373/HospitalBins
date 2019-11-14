@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link  active " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-fill job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-1.html"><i class="material-icons mr-1">post_add</i><span>Job Info</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-2.html"><i class="material-icons mr-1">assignment</i><span>Questionaire</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-3.html"><i class="material-icons mr-1">web</i><span>Form Builder</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-4.html"><i class="material-icons mr-1">dynamic_feed</i><span>Hiring flow</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-5.html"><i class="material-icons mr-1">supervisor_account</i><span>Team</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="add-job-manager-6.html"><i class="material-icons mr-1">contacts</i><span>Candidate</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-7.html"><i class="material-icons mr-1">open_in_new</i><span>Preview</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h5 class="mb-4">Candidate Status</h5>
+                      <div class="btn-group flex-wrap" role="group" aria-label="Button groups">
+                        <button type="button" class="btn btn-sm btn-secondary"><i class="material-icons mr-1">done_all</i>Bulk actions (3)</button>
+                        <button type="button" class="btn btn-sm btn-primary">Phone Interview</button>
+                        <button type="button" class="btn btn-sm btn-primary">Deffered</button>
+                        <button type="button" class="btn btn-sm btn-primary">Pending</button>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-email-modal-xl" data-keyboard="false" data-backdrop="static">Email</button>
+                      </div>
+                      <hr>
+                      <div class="group-card-container">
+                        <div class="form-group ">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <div class="group-card-content-panels">
+                                <h5>Applied<small class="ml-1">(4)</small></h5>
+                                <div class="applied-panel p-1 pr-3">
+                                  <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item">
+                                      <div class="card"> <a href="#" data-toggle="modal" data-target=".bd-candidate-modal-xl" data-keyboard="false" data-backdrop="static">
+                                          <div class="card-body">
+                                            <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                              <div class="media-body">
+                                                <h5 class="mt-0">Harry Poter</h5>
+                                                <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                          <label class="custom-control-label" for="customCheck1"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                            <div class="media-body">
+                                              <h5 class="mt-0">John Smith</h5>
+                                              <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                          <label class="custom-control-label" for="customCheck2"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                            <div class="media-body">
+                                              <h5 class="mt-0">John Smith</h5>
+                                              <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                          <label class="custom-control-label" for="customCheck3"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                            <div class="media-body">
+                                              <h5 class="mt-0">John Smith</h5>
+                                              <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
+                                          <label class="custom-control-label" for="customCheck4"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                            <div class="media-body">
+                                              <h5 class="mt-0">John Smith</h5>
+                                              <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                          <label class="custom-control-label" for="customCheck5"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                            <div class="media-body">
+                                              <h5 class="mt-0">John Smith</h5>
+                                              <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                        <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                          <label class="custom-control-label" for="customCheck6"></label>
+                                        </div>
+                                        <!-- CHECKBOX for BULK -->
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3">
+                              <div class="group-card-content-panels">
+                                <ul class="list-group list-group-flush">
+                                  <h5>Phone Interview<small class="ml-1">(4)</small></h5>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8" checked>
+                                        <label class="custom-control-label" for="customCheck8"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                        <label class="custom-control-label" for="customCheck9"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                        <label class="custom-control-label" for="customCheck10"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-3">
+                              <div class="group-card-content-panels">
+                                <ul class="list-group list-group-flush">
+                                  <h5>Deffered<small class="ml-1">(4)</small></h5>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                        <label class="custom-control-label" for="customCheck11"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                        <label class="custom-control-label" for="customCheck12"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                        <label class="custom-control-label" for="customCheck13"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                        <label class="custom-control-label" for="customCheck14"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-3">
+                              <div class="group-card-content-panels">
+                                <ul class="list-group list-group-flush">
+                                  <h5>Pending<small class="ml-1">(4)</small></h5>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                        <label class="custom-control-label" for="customCheck15"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck16">
+                                        <label class="custom-control-label" for="customCheck16"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck17">
+                                        <label class="custom-control-label" for="customCheck17"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle img-avatar" alt="...">
+                                          <div class="media-body">
+                                            <h5 class="mt-0">John Smith</h5>
+                                            <small><i class="material-icons text-muted md-22">alarm</i><span class="text-muted ml-1 ">1 month ago</span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                      <div class="custom-control custom-checkbox d-flex justify-content-end">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck18">
+                                        <label class="custom-control-label" for="customCheck18"></label>
+                                      </div>
+                                      <!-- CHECKBOX for BULK -->
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer"> <a href="add-job-manager-5.html" class="btn btn-outline-primary float-left ml-2">Back</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom navbar-light bg-dark"> <a href="job-manager.html" class="btn btn-danger">Cancel</a>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </form>
+      </nav>
+      <!--MODAL-->
+      <div class="modal fade bd-candidate-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Candidate</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled">
+                <li class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle" alt="..." width="80">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 ">Harry Poter </h5>
+                    <span class="text-muted"> Added manually by Smith Johnes | 20 days ago</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="evaluation-tab" data-toggle="tab" href="#evaluation" role="tab" aria-controls="evaluation" aria-selected="false">Evaluation</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="job-tab" data-toggle="tab" href="#job" role="tab" aria-controls="job" aria-selected="false">Job(s) applied for</a> </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="container mt-4">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Phone</label>
+                        <input type="number" class="form-control" id="phone1" placeholder="Phone">
+                      </div>
+                    </form>
+                    <br>
+                    <embed src="assets/files/myfile.pdf" width="100%" height="375vw">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+                  <div class="container mt-4 evaluation-sec">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="form-group">
+                          <label for="JobRef" class="font-weight-bolder">Add a quick evaluation</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class=" btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-secondary btn-sm yes-btn">
+                            <input type="radio" name="options" id="option1" autocomplete="off">
+                            <i class="material-icons mr-1">check_circle</i>Yes </label>
+                          <label class="btn btn-secondary btn-sm neutral-btn">
+                            <input type="radio" name="options1" id="option2" autocomplete="off">
+                            <i class="material-icons mr-1">error</i>Not sure </label>
+                          <label class="btn btn-secondary btn-sm no-btn">
+                            <input type="radio" name="options2" id="option3" autocomplete="off">
+                            <i class="material-icons mr-1">cancel</i>No </label>
+                        </div>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <button type="button" class="btn btn-primary btn-sm float-right">Save Evaluation</button>
+                      </div>
+                    </div>
+                    <h5 class="mt-5">All Evaluations</h5>
+                    <hr>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="job" role="tabpanel" aria-labelledby="job-tab">
+                  <div class="container mt-4">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="material-icons ">search</i></span> </div>
+                          <input type="text" class="form-control form-resizer" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary  org-radius ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons mr-1">filter_list</i>Filter </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">New to old</a> <a class="dropdown-item" href="#">Old to new</a> <a class="dropdown-item" href="#">Most used</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 mt-4">
+                        <div class="eva-card card mb-4">
+                          <div class="card-body">
+                            <h6 class="card-title">Product Manager</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Last edited: 7 minutes ago</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-primary btn-sm float-right">View Application</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL-->
+      <!--  MODAL EMAIL   -->
+      <div class="modal fade bd-email-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Email</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <h5>Send separately to 3 candidate(s)</h5>
+              <button class="btn btn-primary btn-sm">Harry Poter</button>
+              <button class="btn btn-primary btn-sm">John Smith</button>
+              <button class="btn btn-primary btn-sm">John Micken</button>
+              <form class="mt-4">
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="font-weight-bold">Email Subject</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" value="[job_offer] - Confirmation of your application">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="font-weight-bold">Email Message</label>
+                  <div class="card ">
+                    <div class="card-body">
+                      <div id="editor">
+                        <p>Your application for the <strong>[job_offer]</strong> position is submitted successfully.</p>
+                        <p>If you want to add something to your application just respond to this email.</p>
+                        <br>
+                        <p><strong>[company_name] </strong> </p>
+                      </div>
+                    </div>
+                    <div class="card-footer"> Placeholders <button type="button" class="ml-3 btn btn-light border">[firt_name]</button>
+                      <button type="button" class="ml-3 btn btn-light border">[last_name]</button>
+                      <button type="button" class="ml-3 btn btn-light border">[candidate]</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Send Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  MODAL EMAIL   -->
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

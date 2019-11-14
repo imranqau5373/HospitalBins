@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link  active " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="settings">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-justified job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="settings.html"><i class="material-icons mr-1">account_circle</i>My Profile</a></li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="settings-company.html"><i class="material-icons mr-1">work</i>Company</a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="settings-payment.html"><i class="material-icons ">attach_money</i>Payment</a> </li>
+            </ul>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 mb-5">
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="card  shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-center mb-2"> <img src="assets/img/img_avatar.png" class="rounded-circle " alt="..." width="150"> </div>
+                <div class="d-flex justify-content-center mb-4"> <small><a href="#"><i class="material-icons mr-1">camera_alt</i>change your image</a></small> </div>
+                <div class="d-flex justify-content-center">
+                  <h1>Company Name</h1>
+                </div>
+                <form class="p-2">
+                  <div class="form-group">
+                    <label for="InputFirstName">Company Name</label>
+                    <input type="text" class="form-control" id="FirstName" aria-describedby="FirstNameHelp" placeholder="Enter your company name">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputLastName">Company Type</label>
+                    <input type="text" class="form-control" id="LastName" aria-describedby="LastNameHelp" placeholder="Enter your company type">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputCompany">Company Introduction</label>
+                    <input type="text" class="form-control" id="InputCompany" aria-describedby="InputCompanyHelp" placeholder="Enter your company introduction">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail">Company Email</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="InputEmailHelp" placeholder="Enter your company email id">
+                  </div>
+                  <div class="form-group">
+                    <label for="InputCell">Company Phone</label>
+                    <input type="tel" class="form-control" id="InputCell" aria-describedby="InputCell" placeholder="Enter your company phone number">
+                  </div>
+                  <div class="text-center mt-4"> <a href="#" id="showToast" class="btn btn-primary w-25">SAVE PROfile</a>
+                    <div class="text-muted mt-2"> By signing up, you agree to our <a href="terms.html" target="_blank" class="text-primary" data-toggle="modal" data-target=".bd-terms-modal-xl">Terms of Agreement</a> </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

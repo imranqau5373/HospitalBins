@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link  active " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="candidate-manager">
+      <div class="container mt-4">
+        <h2 class="mb-3 font-weight-bolder">Candidate Manager</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 "></div>
+          <div class="col-md-12 col-lg-6 ">
+            <div class="input-group mb-3 ">
+              <div class="input-group-prepend "> <span class="input-group-text" id="basic-addon1"><i class="material-icons ">search</i></span> </div>
+              <input type="text" class="form-control form-resizer" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+              <div class="dropdown">
+                <button class="btn btn-secondary  org-radius ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons mr-1">filter_list</i>Filter </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">New to old</a> <a class="dropdown-item" href="#">Old to new</a> <a class="dropdown-item" href="#">Most used</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table reviewer-table table-hover">
+            <thead class="bg-secondary text-white">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Profile</th>
+                <th scope="col">Name</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+                <th scope="col">Cell</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                <td><i class="material-icons">account_circle</i></td>
+                <td>Harry Poter</td>
+                <td> Will Smith </td>
+                <td>harry_mocha@thedomain.com</td>
+                <td>+45-9989898</td>
+                <td class="text-center d-flex"><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="View"><a href="#" data-toggle="modal" data-target=".bd-example-modal-xl" data-keyboard="false" data-backdrop="static"><i class="material-icons circle-icon">open_in_browser</i></a></span></td>
+              </tr>
+              <tr>
+                <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                <td><i class="material-icons">account_circle</i></td>
+                <td>Jacob</td>
+                <td>Jacob</td>
+                <td>Jacob</td>
+                <td>Jacob</td>
+                <td class="text-center d-flex"><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="View"><a href="#"><i class="material-icons circle-icon">open_in_browser</i></a></span></td>
+              </tr>
+              <tr>
+                <th scope="row"><input class="form-check-input ml-0" type="checkbox" value="" id="defaultCheck1"></th>
+                <td><i class="material-icons">account_circle</i></td>
+                <td>Larry</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td class="text-center d-flex"><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span><span class=" " data-toggle="tooltip" data-placement="top" data-original-title="View"><a href="#"><i class="material-icons circle-icon">open_in_browser</i></a></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--MODAL VIEW-->
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Candidate</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled">
+                <li class="media"> <img src="assets/img/img_avatar.png" class="mr-3 rounded-circle" alt="..." width="80">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 ">Harry Poter </h5>
+                    <span class="text-muted"> Added manually by Smith Johnes | 20 days ago</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="evaluation-tab" data-toggle="tab" href="#evaluation" role="tab" aria-controls="evaluation" aria-selected="false">Evaluation</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="job-tab" data-toggle="tab" href="#job" role="tab" aria-controls="job" aria-selected="false">Job(s) applied for</a> </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="container mt-4">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Phone</label>
+                        <input type="number" class="form-control" id="phone1" placeholder="Phone">
+                      </div>
+                    </form>
+                    <br>
+                    <embed src="assets/files/myfile.pdf" width="100%" height="375vw">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+                  <div class="container mt-4 evaluation-sec">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="form-group">
+                          <label for="JobRef" class="font-weight-bolder">Add a quick evaluation</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class=" btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-secondary btn-sm yes-btn">
+                            <input type="radio" name="options" id="option1" autocomplete="off">
+                            <i class="material-icons mr-1">check_circle</i>Yes </label>
+                          <label class="btn btn-secondary btn-sm neutral-btn">
+                            <input type="radio" name="options1" id="option2" autocomplete="off">
+                            <i class="material-icons mr-1">error</i>Not sure </label>
+                          <label class="btn btn-secondary btn-sm no-btn">
+                            <input type="radio" name="options2" id="option3" autocomplete="off">
+                            <i class="material-icons mr-1">cancel</i>No </label>
+                        </div>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <button type="button" class="btn btn-primary btn-sm float-right">Save Evaluation</button>
+                      </div>
+                    </div>
+                    <h5 class="mt-5">All Evaluations</h5>
+                    <hr>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                    <div class="eva-card card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3"><span class="text-success"><i class="material-icons mr-1">check_circle</i><strong>APPROVED</strong> </span></div>
+                          <div class="col-md-3"><span class="card-subtitle text-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></div>
+                          <div class="col-md-3"><img src="assets/img/img_avatar.png" class="mr-2 rounded-circle" alt="..." width="30"><strong>John Smith</strong></div>
+                          <div class="col-md-3 text-muted"><strong>4d ago</strong></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer"><a href="#" class="float-right btn btn-primary btn-sm">Edit</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="job" role="tabpanel" aria-labelledby="job-tab">
+                  <div class="container mt-4">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="material-icons ">search</i></span> </div>
+                          <input type="text" class="form-control form-resizer" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary  org-radius ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons mr-1">filter_list</i>Filter </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">New to old</a> <a class="dropdown-item" href="#">Old to new</a> <a class="dropdown-item" href="#">Most used</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 mt-4">
+                        <div class="eva-card card mb-4">
+                          <div class="card-body">
+                            <h6 class="card-title">Product Manager</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Last edited: 7 minutes ago</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-primary btn-sm float-right">View Application</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL VIEW-->
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

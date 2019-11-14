@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link  active " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-fill job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-1.html"><i class="material-icons mr-1">post_add</i><span>Job Info</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-2.html"><i class="material-icons mr-1">assignment</i><span>Questionaire</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="add-job-manager-3.html"><i class="material-icons mr-1">web</i><span>Form Builder</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-4.html"><i class="material-icons mr-1">dynamic_feed</i><span>Hiring flow</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-5.html"><i class="material-icons mr-1">supervisor_account</i><span>Team</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-6.html"><i class="material-icons mr-1">contacts</i><span>Candidate</span></a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="add-job-manager-7.html"><i class="material-icons mr-1">open_in_new</i><span>Preview</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card w-100">
+              <div class="card-body">
+                <section class="step-1 mb-4">
+                  <h4 class="card-title mb-4 text-center text-primary">Step-1</h4>
+                  <h5 class="card-title mb-4">Company Introduction<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div class="card ">
+                          <div class="card-body">
+                            <div id="editor">
+                              <p>Hi. We are Company ABC with 20 offices in Country.</p>
+                              <p>If you want to add something to your application just respond to this email.</p>
+                              <br>
+                              <p><strong>[company_name] </strong> </p>
+                            </div>
+                          </div>
+                          <div class="card-footer"> Placeholders <button type="button" class="ml-3 btn btn-light border">[firt_name]</button>
+                            <button type="button" class="ml-3 btn btn-light border">[last_name]</button>
+                            <button type="button" class="ml-3 btn btn-light border">[candidate]</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--<div class="form-builder-add text-center mb-5" ><span class="p-3 cur" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+ Add new
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Text (Single Line)</button>
+                  <button class="dropdown-item" type="button">Text (Multiple Line)</button>
+                  <button class="dropdown-item" type="button">Yes / No</button>
+                  <button class="dropdown-item" type="button">Single Choice</button>
+                  <button class="dropdown-item" type="button">Multiple Choice</button>
+                  <button class="dropdown-item" type="button">Video Answer</button>
+                  <button class="dropdown-item" type="button">Add a file</button>
+                  <button class="dropdown-item" type="button">Add Question from Template</button>
+                </div>
+                </span> </div>-->
+                </section>
+                <section class="step-2 mb-5">
+                  <h4 class="card-title mb-4 text-center text-primary">Step-2</h4>
+                  <h5 class="card-title mb-4">Candidate Introduction<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                  <div class="form-builder-add text-center mb-5 text-muted"> Candidate information will be asked on this step </div>
+                </section>
+                <section class="step-3 mb-5">
+                  <h4 class="card-title mb-4 text-center text-primary">Step-3</h4>
+                  <h5 class="card-title mb-4">Screening Questions<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <div class="list-group"> <a href="#" class="list-group-item list-group-item-action active"> Sort the questions you need to show as: </a> <a href="#" class="list-group-item list-group-item-action "><i class="material-icons float-right">drag_indicator</i><strong>Question 1</strong> – Please explain why you are applying for this post and what you have to offer.</a> <a href="#" class="list-group-item list-group-item-action"><i class="material-icons float-right">drag_indicator</i><strong>Question 2</strong> – Please list your proficiencies, qualities, attributes and experiences that you may contribute to your performance in this post.</a> <a href="#" class="list-group-item list-group-item-action"><i class="material-icons float-right">drag_indicator</i><strong>Question 3</strong> – What evidence do you have to support your application?</a> <a href="#" class="list-group-item list-group-item-action"><i class="material-icons float-right">drag_indicator</i><strong>Question 4</strong> – Describe a situation where you have worked with people who are different from you in relation to age, background or gender.</a> <a href="#" class="list-group-item list-group-item-action"><i class="material-icons float-right">drag_indicator</i><strong>Question 5</strong> – Describe a situation where you have worked closely with other people as part of a team.</a> </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="step-4 mb-5">
+                  <h4 class="card-title mb-4 text-center text-primary">Step-4</h4>
+                  <h5 class="card-title mb-4">Personal Information<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                  <div class="form-builder-profile mb-3"><i class="material-icons mr-1">call</i>Phone <div class="dropdown float-right">
+                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Optional </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Required</a> </div>
+                    </div>
+                  </div>
+                  <div class="form-builder-profile mb-5"><i class="material-icons mr-1">burst_mode</i>Photo <div class="dropdown float-right">
+                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Optional </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Required</a> </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="step-5 mb-5">
+                  <h4 class="card-title mb-4 text-center text-primary">Step-5</h4>
+                  <h5 class="card-title mb-4">Company Ending remarks<a href="#"><i class="material-icons float-right" data-toggle="tooltip" data-placement="top" title="drag question">drag_indicator</i></a></h5>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div class="card ">
+                          <div class="card-body">
+                            <div id="editor2">
+                              <p>Hi. We are Company ABC with 20 offices in Country.</p>
+                              <p>If you want to add something to your application just respond to this email.</p>
+                              <br>
+                              <p><strong>[company_name] </strong> </p>
+                            </div>
+                          </div>
+                          <div class="card-footer"> Placeholders <button type="button" class="ml-3 btn btn-light border">[firt_name]</button>
+                            <button type="button" class="ml-3 btn btn-light border">[last_name]</button>
+                            <button type="button" class="ml-3 btn btn-light border">[candidate]</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer"> <a href="add-job-manager-4.html" class="btn btn-primary float-right mr-2">Next</a> <a href="add-job-manager-2.html" class="btn btn-outline-primary float-left ml-2">Back</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom navbar-light bg-dark"> <a href="job-manager.html" class="btn btn-danger">Cancel</a>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </form>
+      </nav>
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>

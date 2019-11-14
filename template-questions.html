@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta.njk -->
+    <meta charset="utf-8">
+    <title>UI starter kit</title>
+    <!-- change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quill.snow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/apexcharts.min.js"></script>
+    <!--
+<link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="assets/img/favicons/favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="assets/img/favicons/favicon-270x270.png" />
+-->
+    <!-- end meta.njk -->
+  </head>
+  <body class="" style="">
+    <!-- index.njk -->
+    <!-- header.njk -->
+    <nav class="navbar navbar-top navbar-expand-xl navbar-dark bg-secondary"><a class="navbar-brand pt-0 pb-0 mr-4" href="index.html"><img src="assets/img/speekio-logo.svg" width="130"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item "> <a class="nav-link " href="index.html">Dashboard <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item "> <a class="nav-link " href="job-manager.html">Job Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="candidate-manager.html">Candidate Manager</a> </li>
+          <li class="nav-item"> <a class="nav-link  active " href="template.html">Templates</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="settings.html"> Settings</a> </li>
+        </ul>
+        <form class=" my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">DK</a> </div>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/img_avatar.png" alt="Avatar" class="avatar mr-2"><strong>John Smith</strong></a> </li>
+            <li class="nav-item"> <a class="nav-link " href="#"><i class="material-icons mr-1">exit_to_app</i>Log-off</a> </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- end header.njk -->
+    <!-- end index.njk -->
+    <section class="job-manager">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-justified job-nav-pills">
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="template.html"><i class="material-icons mr-1">assignment</i>Questionaires</a></li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary active" href="template-questions.html"><i class="material-icons mr-1">format_list_numbered</i>Questions</a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="template-company-info.html"><i class="material-icons mr-1">info</i>Company Introductions</a> </li>
+              <li class="nav-item"> <a class="nav-link btn border border-primary" href="template-email.html"><i class="material-icons mr-1">email</i>Email Templates</a> </li>
+            </ul>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1"><i class="material-icons ">search</i></span> </div>
+              <input type="text" class="form-control form-resizer" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+              <div class="dropdown">
+                <button class="btn btn-secondary  org-radius ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons mr-1">filter_list</i>Filter </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">New to old</a> <a class="dropdown-item" href="#">Old to new</a> <a class="dropdown-item" href="#">Most used</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="float-right"> <a href="#" data-toggle="modal" data-target=".add-questions-template-modal-xl" data-keyboard="false" data-backdrop="static">
+                <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle mr-1"></i>+ Add Questions</button>
+              </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">What is the size of the earth in kms?<span class="card-controls"><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span></span> <span class="float-right three-dot">
+                    <div class="btn-group"> <a href="#" class="text-dark" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"> <i class="material-icons"> more_vert </i> </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">delete_forever</i>Delete</button>
+                      </div>
+                    </div>
+                  </span> </h5>
+                <p class="card-text text-muted">Created on 14th August 2019</p>
+              </div>
+            </div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">What is your full name?<span class="card-controls"><span class="float-right mr-2" data-toggle="tooltip" data-placement="top" title="Delete"><a href="#"><i class="material-icons circle-icon">delete_forever</i></a></span></span> <span class="float-right three-dot">
+                    <div class="btn-group"> <a href="#" class="text-dark" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"> <i class="material-icons"> more_vert </i> </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <button class="dropdown-item" type="button"><i class="material-icons mr-2">delete_forever</i>Delete</button>
+                      </div>
+                    </div>
+                  </span> </h5>
+                <p class="card-text text-muted">Created on 14th August 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ADD QUESTIONS TEMPLATE-->
+      <div class="modal fade add-questions-template-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add New Question</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="NameField" class="font-weight-bolder">Name</label>
+                      <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Enter Text">
+                      <small id="emailHelp" class="form-text text-muted">Please enter question name</small> </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Example: This is question">
+                              <small id="emailHelp" class="form-text text-muted">Please enter question text</small> </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="nametext" aria-describedby="DateHelp" placeholder="Example: 90s">
+                              <small id="emailHelp" class="form-text text-muted">Add time of expiry for this question</small> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <label for="NameField" class="font-weight-bolder">Question type</label>
+                            <div class="dropdown ">
+                              <button class="btn btn-outline-dark dropdown-toggle border-form" type="button" id="dropdownMenuButtonLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select type </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="material-icons mr-2 ">check_box</i>Checkbox</a> <a class="dropdown-item" href="#"><i class="material-icons mr-2 ">aspect_ratio</i>Open ended</a> <a class="dropdown-item" href="#"><i class="material-icons mr-2 ">radio_button_checked</i>Radio</a> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-12 custom-textbox-form">
+                            <label class="sr-only" for="inlineFormInputGroup">Answer 1</label>
+                            <div class="input-group mb-2">
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 1">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 custom-textbox-form">
+                            <label class="sr-only" for="inlineFormInputGroup">Answer 2</label>
+                            <div class="input-group mb-2">
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 custom-textbox-form">
+                            <label class="sr-only" for="inlineFormInputGroup">Answer 3</label>
+                            <div class="input-group mb-2">
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Answer 3">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><a href="#" class="text-danger"><i class="material-icons">delete_forever</i></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="custom-control custom-switch float-left">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1">Answer must required</label>
+                        </div>
+                        <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Delete Question"><i class="material-icons">delete_forever</i></a> <a href="#" class="float-right" data-toggle="tooltip" data-placement="top" title="Duplicate Question"><i class="material-icons mr-2">file_copy</i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ADD QUESTIONAIRE TEMPLATE-->
+    </section>
+    <!-- footer.njk -->
+    <footer role="contentinfo" class="">
+    </footer>
+    <!-- end footer.njk -->
+    <script src='assets/js/jquery-ui.min.js'></script>
+    <script src='assets/js/vendor/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/vendor/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/OverlayScrollbars.min.js'></script>
+    <script src='assets/js/speekio-custom.js'></script>
+    <script src='assets/js/speekio-caller.js'></script>
+    <script src='assets/js/quill.js'></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        OverlayScrollbars(document.querySelectorAll('.applied-panel'),
+        {
+          className: "os-theme-block-dark"
+        });
+      });
+    </script>
+    <script>
+      $(function()
+      {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
